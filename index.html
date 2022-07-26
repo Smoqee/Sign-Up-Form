@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div id="graphic">
+        <div class="logo-header">
+            <img src="logo.svg" alt="">           
+            <h1>aquacademy</h1>
+        </div>
+        <div class="credit">
+            <p>Photo by <a href="https://unsplash.com/photos/Uu1CtKngEXY">Naja</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+    </div>
+    
+    <div id="sign-up">
+        <h2>
+        The human body is just like our planet, it contains mostly water.  If you want to fully understand the <span class="italic">life</span> inside the ocean, you should definitly choose <span class="colorful">aquacademy</span> to expand your knowledge.
+        </h2>
+
+        <h2 class="lower-text">Water is the driving force of <span class="italic">nature</span></h2>
+
+        <form action="" method="get">
+            <div class="input-area">
+                <h2>Let's do this!</h2>
+                <div class="input-fields">
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" placeholder=" " required>
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" placeholder=" " required>
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                    </div>
+                    <div>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]*" title="Only numbers allowed!" placeholder=" " required>
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" class="error" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder=" " required>
+                    </div>
+                    <div>
+                        <label for="password-confirmation">CONFIRM PASSWORD</label>
+                        <input type="password" id="password-confirmation" name="password-confirmation" class="error" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder=" " required>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href=""><span class="colorful">Log in</span></a></p>
+    </div>
+</body>
+</html>

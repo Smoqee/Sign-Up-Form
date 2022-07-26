@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+:root {
+    --space-to-left: 45px;
+    --colorful-color: #7ba9ff;
+    --error-color: #ff7b7b;
+    
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#graphic {
+    background-color: lightblue;
+    background-image: url(naja-bertolt-jensen-Uu1CtKngEXY-unsplash.jpg);
+    background-size: cover;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.logo-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 45%;
+    padding: 30px 0 30px 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.389);
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+img {
+    filter: invert(100%);
+}
+
+.credit {
+    color: white;
+    align-self: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#graphic a {
+    text-decoration: none;
+    color: #c8c8c8;
+    text-decoration: underline;
+}
+
+#sign-up {
+    width: calc(100% - 30vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    margin: 30px 150px 20px var(--space-to-left);
+}
+
+
+.lower-text {
+    margin-bottom: 30px;
+}
+
+.input-area {
+    padding: 20px 0px 0px var(--space-to-left);
+    background-color: white;
+    box-shadow: 5px 3px 8px #E5E7EB;
+}
+
+form h2 {
+    margin: 0 0 20px 0;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input-fields div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #696969;
+    margin-bottom: 5px;
+}
+
+.input-area input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    width: 280px;
+    height: 28px;
+}
+
+button {
+    background-color: var(--colorful-color);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    height: 45px;
+    width: 180px;
+    margin-top: 28px;
+    margin-left: var(--space-to-left);
+    box-shadow: 3px 3px 5px #E5E7EB;
+    
+}
+
+#sign-up p {
+    margin-left: var(--space-to-left);
+}
+
+.colorful {
+    color: var(--colorful-color);
+}
+
+.italic {
+    font-style: italic;
+}
+
+#sign-up a {
+    text-decoration: none;
+}
+
+
+.input-area input:focus {
+    outline-style: none;
+    border: 2px solid var(--colorful-color);
+    box-shadow: 3px 3px 5px #E5E7EB;
+}
+
+.input-area input:invalid:not(:placeholder-shown){
+    outline-style: none;
+    border: 2px solid var(--error-color);
+}
+
+@media only screen and (max-width: 1100px) {
+    .input-area input {
+        width: 200px;
+    }
+}
