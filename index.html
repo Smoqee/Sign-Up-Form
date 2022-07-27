@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 <body>
     <div id="graphic">
         <div class="logo-header">
@@ -46,11 +47,13 @@
                     </div>
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password" class="error" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder=" " required>
+                        <input type="password" id="password" name="password"pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder=" " required>
+                        <p>must contain 8 characters: letters aswell as numbers</p>
                     </div>
                     <div>
                         <label for="password-confirmation">CONFIRM PASSWORD</label>
-                        <input type="password" id="password-confirmation" name="password-confirmation" class="error" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder=" " required>
+                        <input type="password" id="password-confirmation" name="password-confirmation" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder=" " required>
+                        <p id="error-message">*passwords do not match</p>
                     </div>
                 </div>
             </div>
